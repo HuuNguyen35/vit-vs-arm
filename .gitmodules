@@ -1,0 +1,3 @@
+[submodule "third_party/ViT-VS"]
+	path = third_party/ViT-VS
+	url = https://github.com/AlessandroScherl/ViT-VS
