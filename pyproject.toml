@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vitvs-arm"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.4",
+    "opencv-python>=5.1",
+    "pyyaml>=6.0",
+    "pyrealsense2>=2.59",
+    "torch>=2.15",
+    "torchvision>=0.29"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
