@@ -1,0 +1,11 @@
+# Laptop environment (RTX 4060). Keep in sync with pyproject.toml.
+#
+# torch: a plain `pip install torch` may pull a CPU-only build on Windows.
+# Install the CUDA build first, then the rest, e.g.:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+# (pick the CUDA version from https://pytorch.org/get-started/locally/)
+torch
+numpy
+opencv-python
+pyyaml
+pyrealsense2

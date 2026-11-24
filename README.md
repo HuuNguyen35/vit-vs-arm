@@ -54,10 +54,16 @@ See `docs/interfaces.md` (to be written) for the agreed formats:
 git clone git@github.com:HuuNguyen35/vit-vs-arm.git
 cd vit-vs-arm
 python3 -m venv .venv
-source .venv/bin/activate
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+git submodule update --init      # fetches third_party/ViT-VS
+
+# Install the CUDA build of PyTorch first (see requirements.txt), then:
+pip install -r requirements.txt
+pip install -e .
+python scripts/cuda_smoke_test.py   # checks imports and the GPU
 ```
 
-Dependency files (laptop and Pi) will be added as the code takes shape.
+The Pi-side dependency file will be added when the robot code takes shape.
 
 ## Git workflow
 
